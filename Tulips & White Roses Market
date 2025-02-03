@@ -1,0 +1,170 @@
+/* === index.html (Home Page) === */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Store - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Market Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Featured Products</h2>
+        <img src="images/featured-product.jpg" alt="Featured Product">
+        <p>Check out our best-selling products!</p>
+        <a href="products.html" class="button">View Products</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Market Store</p>
+    </footer>
+</body>
+</html>
+
+/* === products.html (Products Page) === */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Product List</h2>
+        <div class="product">
+            <img src="images/product1.jpg" alt="Product 1">
+            <p>Product 1 - $10.99</p>
+        </div>
+        <div class="product">
+            <img src="images/product2.jpg" alt="Product 2">
+            <p>Product 2 - $15.99</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Market Store</p>
+    </footer>
+</body>
+</html>
+
+/* === contact.html (Contact Page) === */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Market Store</p>
+    </footer>
+</body>
+</html>
+
+/* === styles.css (CSS for Styling) === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+}
+
+.product {
+    display: inline-block;
+    margin: 15px;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* === script.js (Optional JavaScript for Interaction) === */
+console.log("Website loaded successfully!");
